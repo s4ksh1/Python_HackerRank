@@ -1,0 +1,15 @@
+def my_fun():
+    for x in range(1,(n+1)):
+        print(x, end='')
+
+if __name__ == '__main__':
+    n = int(input())
+    
+my_fun()
+
+
+Input (stdin):
+3
+
+Output:
+123
