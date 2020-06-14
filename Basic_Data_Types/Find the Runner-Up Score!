@@ -1,0 +1,17 @@
+if __name__ == '__main__':
+    n = int(input())
+    arr =list(map(int, input().split()))
+    
+    max_arr=max(arr)
+while max(arr)==max_arr:
+    arr.remove(max_arr)
+
+print(max(arr))
+
+
+Input (stdin):
+5
+2 3 6 6 5
+
+Output:
+5
