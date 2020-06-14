@@ -1,0 +1,20 @@
+def swap_case(s):
+    result=""
+    for x in s:
+        if x== x.lower():
+            result+=x.upper()
+        else:
+            result+=x.lower()
+    return result
+ 
+if __name__ == '__main__':
+    s = input()
+    result = swap_case(s)
+    print(result)
+  
+  
+Input (stdin):
+HackerRank.com presents "Pythonist 2".
+
+Output:
+hACKERrANK.COM PRESENTS "pYTHONIST 2".
