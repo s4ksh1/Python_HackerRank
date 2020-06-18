@@ -1,0 +1,19 @@
+import re
+test_cases=int(input())
+for i in range (test_cases):
+    try:
+        s=input()
+        re.compile(s)
+        print("True")
+    except re.error:
+        print("False")
+        
+        
+Input (stdin):
+2
+.*\+
+.*+
+
+Output:
+True
+False
