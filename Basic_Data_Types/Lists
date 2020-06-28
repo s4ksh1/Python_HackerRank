@@ -1,0 +1,51 @@
+if __name__ == '__main__':
+    N = int(input())
+    
+i=0
+l =list()
+for i in range(N):
+    inputs = input().split()
+    if len(inputs)==1: 
+        command =inputs[0] 
+    if len(inputs)==2: 
+        command = inputs[0] 
+        e = int(inputs[1])
+    if len(inputs)==3: 
+        command = inputs[0] 
+        i = int(inputs[1])
+        e = int(inputs[2])
+    if command == "insert":
+        l.insert(i,e)
+    elif command == "print":
+        print(l)
+    elif command == "remove":
+        l.remove(e)
+    elif command == "append":
+        l.append(e)
+    elif command == "sort":
+        l.sort()
+    elif command == "pop":
+        l.pop()
+    elif command == "reverse":
+        l.reverse() 
+        
+
+Input (stdin):
+12
+insert 0 5
+insert 1 10
+insert 0 6
+print
+remove 6
+append 9
+append 1
+sort
+print
+pop
+reverse
+print
+
+Output:
+[6, 5, 10]
+[1, 5, 9, 10]
+[9, 5, 1]
